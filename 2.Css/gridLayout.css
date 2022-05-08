@@ -21,35 +21,13 @@ body {
 .container {
     display: grid;
     grid-gap: 30px;
-    /* height: 100%; */
-    grid-template-columns: repeat(24,1fr) ;
-    grid-template-rows: 150px 400px 100px;
-    grid-template-areas: 
-    "h h h h h h h h h h h h h h h h h h h h h h h h"
-    ". m m m m m m m m m m m c c c c c c c c c c c ."
-    "f f f f f f f f f f f f f f f f f f f f f f f f"
-     ;
+    grid-row-gap:0;
+    /* width: 100%; */
+   
      background-color: blue;
 }
 
-nav {
-    grid-area: h;
-    background-color: #666;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.content-two {
-    grid-area: m;
-    background-color: brown;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    bottom: 50px;
-}
+
 footer {
     grid-area: f;
     background-color: #666;
@@ -57,7 +35,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    /* position:relative; */
     bottom: 50px;
 }
 .content-one {
