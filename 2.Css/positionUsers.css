@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.7em;
+    background-color: black;
+    height: fit-content;
+}
+/* .fixed {
+    position: fixed;
+     top: 10px;
+     left: 12px; 
+    background-color: #9a9a9a;
+    width: 100%;
+    height: 200px;
+    color: antiquewhite;
+    z-index: 1;
+
+} */
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 260px;
+    color: antiquewhite;
+    padding-bottom: 20px;
+    background-image:linear-gradient(180deg,#9a9a9a,#000);
+    z-index: 6;
+}
+.nav-left {
+    position: absolute;
+    left: 40.5vw;
+    top: 20px;
+    background-color: #5f5f5f;
+    width: 19vw;
+    font-weight: bold;
+    font-size:1.7em ; 
+    height: 25px;
+    border-radius:3px ;
+    box-shadow: 0px 0px 3px 2px #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* the width of something is */
+
+.nav-right {
+    position: absolute;
+    width: 53vw;
+    /* border: 1px solid red; */
+    left: 23.5vw;
+    top: 55px;
+    background-color: inherit; 
+    font-size:1.2em ; 
+
+    display: flex;
+    justify-content: center;
+}
+/* Is'nt this box and it's contents supposed to be at the
+center of the page at any width? */
+
+ul {
+  list-style: none;
+}
+ul li {
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+ul li:nth-child(3) {
+    background-color: rgb(194, 99, 194);
+    border-radius: 5px;
+    padding:6px 3px;
+    padding-left: 6px;
+    margin-bottom: 3px;
+    width: 70px;
+}
+ul p {
+    font-weight: bolder;
+    color: rgba(48, 26, 0);
+    font-size: 1.4em;  
+    padding-bottom: 5px;
+}
+
+.nav-last {
+    /* border: 1px solid blue; */
+    position: absolute;    
+    /* background-color: blue; */
+    top: 170px;
+    width: 53vw;
+    left: 23.5vw;
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    border: black solid 1px;
+    position: absolute;
+    /* top: 120px; */
+    font-size:1em ; 
+    background-color: white;
+    color: #000;
+    padding: 6px;
+    border-radius: 6px;
+    /* margin-top: 47px; */
+
+    
+}
+.search input {
+    border: none;
+    outline: none;
+    width: 80px;
+    font-size:1.1em ; 
+    color: #000;
+}
+input::placeholder {
+    color: #000;
+    font-size:1.1em ; 
+
+}
+
+/* main styling */
+main {
+    /* margin-top: 30px; */
+    position: relative;
+    top: 260px;
+    color: beige;
+    background-color: #9a9a9a;
+    height: 2200px;
+    width: 100%;
+    z-index: 5;
+    margin-bottom: 60px;
+
+}
+
+
+.person-one {
+    top: 0;
+    margin: 20px 0;
+}
+
+.person-two {
+    top:80px;
+}
+
+.person-three {
+    top:160px;
+}
+
+.person-four {
+    top:240px;
+}
+
+.person-five {
+    top:320px;
+}
+
+.person-six {
+    top:400px;
+}
+
+.person-seven {
+    top:480px;
+}
+
+.person-eight {
+    top:560px;
+}
+
+
+.contain {
+    position: relative;
+    left: 12.5vw;
+    width: 75vw;
+    /* border: 1px solid red; */
+    /* z-index: 4; */
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.profile {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+.name, .age {
+    background-color: #5f5f5f;
+    margin-top: 5px;
+    padding: 4px;
+    border-radius: 2.5px;
+}
+
+.person {
+    position: absolute;
+    background-color:brown;
+    width: 150px;
+    height: 230px;
+    border-radius: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 3px 2px #000;
+
+}
+
+figure {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #5f5f5f;
+    border-radius: 60px;
+}
+img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+
+}
+
+@media  ( min-width : 559px) { 
+
+    /*I actually dont know why the profiles are displaying two
+    each row like I want them. I think the profiles at the right
+    hand side should be overlapping the ones on the left  
+    because they all have left of 10vw.
+      They are not overlapping because they have positon 
+      relative, and position relative is relative to the 
+      elements position and not to the lastly positioned 
+      parent.
+
+    Remember to check how different it is to set an 
+    element's position to relative from absolute.
+    */
+
+    nav {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 260px;
+        color: antiquewhite;
+        padding-bottom: 20px;
+        background-image:
+        linear-gradient(360deg,#5a5a5a,yellow);
+        z-index: 6;
+    }
+    .contain-1,.contain-2,.contain-3,.contain-4,.contain-5
+    ,.contain-6,.contain-7,.contain-8 {
+        position: static;
+        /* left: 10vw; */
+        /* display: inline; */
+        width: 40vw;
+        /* border: 1px solid red; */
+        /* background-color: blue; */
+        /* z-index: 14; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        height: 300px;
+        /* margin-top: 30px; */
+        margin: 0;
+    }
+
+    .person-one {
+        /* top: 0; */
+        /* left: 5vw; */
+        margin: 0px;
+    }
+    
+    .person-two {
+        /* top:270px; */
+        /* left: 50vw; */
+        margin: 0;
+  
+    }
+    
+    .person-three {
+        /* top: 270px; */
+        /* left: 5vw; */
+        margin-top: 0px;
+
+    }
+    
+    .person-four {
+        /* top: 270px; */
+        /* left: 50vw; */
+        margin-top: 0px;
+
+    }
+    
+    .person-five {
+        /* top: 520px; */
+        /* left: 5vw; */
+        margin-top: 0px;
+
+    }
+    
+    .person-six {
+        /* top: 520px;
+        left: 50vw;     */
+        margin-top: 0px;
+
+    }
+    
+    .person-seven {
+        /* top: 770px; */
+        /* left: 5vw;  */
+        margin-top: 0px;
+
+    }
+    
+    .person-eight {
+        /* top: 770px; */
+        /* left: 50vw;  */
+        margin-top: 0px;
+    }
+
+    /* .contain {
+        position: absolute;
+        left: 15vw;
+        width: 35vw;
+        border: 1px solid red;
+        z-index: 4;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+    
+    
+    .person {
+        position: static;
+        background-color:rgba(245, 250, 249, 0.4);
+        /* rgba(245, 250, 249, 0.4) */
+        width: 150px;
+        height: 230px;
+        border-radius: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 3px 2px #000;
+        font-weight: bold;
+        margin: 0;
+    
+    }
+
+    main {
+        /* margin-top: 30px; */
+        position: relative;
+        /* display: flex; */
+        top: 260px;
+        color: white;
+        background-color: brown;
+        height: 1200px;
+        width: 100%;
+        z-index: 5;
+        margin-bottom: 60px;
+    
+    }
+
+    .sub-main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        justify-content: center;
+        /* background-color: blue; */
+        margin: auto;
+
+        /* height: 1000px; */
+    }
+
+    
+
+
+    .profile {
+        font-size: 1.1em;
+        margin-top: 5px;
+    }
+    .name, .age {
+        background-color: #000;
+        margin-top: 5px;
+        padding: 4px;
+        border-radius: 2.5px;
+    }
+}
+
+@media (min-width : 658px) {
+
+    nav {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 260px;
+        color: antiquewhite;
+        padding-bottom: 20px;
+        background-image:
+        linear-gradient(360deg,#5a5a5a,yellow);
+        z-index: 6;
+    }
+    .nav-left {
+        position: absolute;
+        left: 3vw;
+        top: 110px;
+        background-color: #5f5f5f;
+        width: 32vw;
+        font-weight: bold;
+        font-size:2.4em ; 
+        height: 40px;
+        border-radius:11px ;
+        box-shadow: 0px 0px 3px 2px #000;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* the width of something is */
+    
+    .nav-right {
+        position: absolute;
+        width: 53vw;
+        /* border: 1px solid red; */
+        left: 44vw;
+        top: 110px;
+        background-color: inherit; 
+        font-size:1.6em ; 
+    
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* Is'nt this box and it's contents supposed to be at the
+    center of the page at any width? */
+    
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+
+      /* border: 1px solid black; */
+    }
+    ul li {
+        margin-left: 0px;
+        /* padding-bottom: 5px; */
+        background-color: rgb(19, 9, 1);
+        border-radius: 5px;
+        /* padding:6px 3px;
+        padding-left: 6px; */
+        margin-bottom: 3px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li span {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    ul li:nth-child(2) {
+        border-radius: 5px;
+        padding:6px 3px;
+        padding-left: 6px;
+        margin-bottom: 3px;
+        width: 80px;
+        position: absolute;
+        visibility: hidden;
+    }
+    ul li:nth-child(3) {
+        background-color: #000;
+    }
+    ul p {
+        position: absolute;
+        visibility: hidden;
+        font-weight: bolder;
+        color: rgba(48, 26, 0);
+        font-size: 1.4em;  
+        padding-bottom: 5px;
+    }
+    
+    .nav-last {
+        /* border: 1px solid blue; */
+        position: absolute;    
+        /* background-color: blue; */
+        top: 135px;
+        width: 32vw;
+        left: 3vw;
+        margin-top: 32px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    
+    .search {
+        border: black solid 1px;
+        position: absolute;
+        /* top: 120px; */
+        font-size:1.5em ; 
+        background-color: white;
+        color: #000;
+        /* padding: 6px; */
+        border-radius: 6px;
+        /* margin-top: 47px; */
+        height: 40px;
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search input {
+        border: none;
+        outline: none;
+        width: 120px;
+        font-size:1.1em ; 
+        color: #000;
+    }
+    input::placeholder {
+        color: #000;
+        font-size:1.1em ; 
+    
+    }
+    
+}

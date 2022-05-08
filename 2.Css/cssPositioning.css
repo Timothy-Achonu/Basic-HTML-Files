@@ -1,0 +1,74 @@
+html {
+    background-color: rgb(243, 130, 168);
+    margin: 10px;
+    height: 1000px;
+}
+
+body {
+    background-color: rgb(39, 216, 148);
+    /* padding: 10px; */
+    /* margin-top:60; */
+    position: relative;
+    /* position: absolute; */
+    /* top: 50px;  */
+    /* left: 0; */
+    height: 60px;
+}
+/*Relative says from where you are move xpx away from your 
+parent, depending on the direction that was indicated 
+whether left/top/bottom/right
+
+*/
+
+header {
+    background-color: rgb(237, 244, 245);
+    /* margin: 10px; */
+    /* position: fixed;  */
+    /* position: relative; */
+    top: 0px;
+    left:20px;
+    z-index: 1;
+    /* background-color: #9a9a9a;
+    width: 100%;
+    height: 200px; */
+    height: 20px; 
+
+}
+/* When container is relative and child is relative what happens?
+
+   When container is relative and child is absolute what happens?
+
+   When container is absolute and child is absolute what happens?
+
+   When container is absolute and child is relative what happens?
+
+
+*/
+nav {
+    background-color: rgb(60, 26, 209);
+    /* margin: 10px; */
+    position: relative;
+    /* top: 60px;    */
+    height: 20px; 
+    
+}
+
+footer {
+    background-color: #afafaf;
+    /* margin: 10px; */
+    /* position: fixed; */
+    height: 20px;
+    top: 0;
+    z-index: 5;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    width: 90vw;
+}
+
+img {
+    width: 100px;
+}

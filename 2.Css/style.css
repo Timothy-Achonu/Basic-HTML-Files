@@ -1,0 +1,28 @@
+﻿h1 {
+     color:hsl(23,40%,68%)
+}
+
+h2 {
+     color:hsl(0,100%,50%)
+}
+.space {
+     margin-top: 200px;
+     background-color:rgba(140,0,0,0.8);
+}
+.bk-ground {
+     background-color:hsl(200,85%,40%) ;
+     background-image: url("/new_rose.PNG");
+     margin: auto;
+     padding:500px 100px;
+     width: 800px;
+     /* color:hsl(50, 50%, 100%); */
+     background-repeat:no-repeat;
+     background-position:right top;
+     /* background-size:cover ;  */  
+     background-attachment:scroll; 
+     /* background-origin: left; */
+}
+/* .bk-ground {
+     background-color:hsl(0,50%,50%);
+} */
+

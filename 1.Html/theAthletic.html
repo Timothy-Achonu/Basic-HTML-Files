@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Athletic</title>
+    <!-- <link rel="stylesheet" href="../2.Css/theAthletic.css"> -->
+    <!-- <a href="https://kit.fontawesome.com/f88dc4ac15.js" crossorigin="anonymous"></a> -->
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/f88dc4ac15.js" crossorigin="anonymous"> -->
+    <!-- <script src="https://kit.fontawesome.com/f88dc4ac15.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/7ec6a34f6b.js" crossorigin="anonymous"></script>
+     <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 1.02em; */
+}
+
+  /* nav styles */
+nav {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    padding-bottom: 90px;
+}
+nav h1 {
+    margin-bottom: 30px;
+}
+.nav-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+nav p {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    /* border: #b5b5b5 1px solid; */
+    /* justify-content: center; */
+    font-size: 0.7em;
+}
+
+.nav-right {
+    position: absolute;
+    top: 194px;
+    padding: 10px 30px;
+    border: 3px solid #b5b5b5;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+.nav-bottom {
+    color: beige;
+    font-size: 0.8em;
+}
+
+/* main-content-one styles */
+
+.main-content-one {
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    background-color: white;
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.content-one-top .right {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    color: black;
+    /* border: 1px red; */
+    /* background-color: red; */
+    z-index: 4;
+    width: 115px;
+}
+hr {
+    height: 5px;
+    width: 60px;
+    color: black;
+    background-color: black;
+    margin-top: 2px;
+}
+.content-one-top .left {
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-payments {
+    /* box-shadow: 0px 20px 0px 0px rgba(0,0,0,0.2); */
+    color:black;
+}
+
+.payments {
+    margin-top: 30px;
+    /* box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.75); */
+    padding: 10px;
+}
+
+.payments .left {
+    font-weight:bold ;
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 17em;
+}
+
+.payments .left .div-input {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3.6px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 
+     0 0 0px 2px #000; 
+}
+
+.payments .left .div-input input{
+    background-color: black;
+    visibility: hidden;
+}
+
+.text div:nth-child(3){
+    font-weight:100;
+}
+
+.payments .right {
+    font-weight:bold ;
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 17em;
+    /* height: 90px; */
+}
+
+.payments .right .div-input {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3.6px;
+    background-color: black;
+    /* z-index: 7; */
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 
+     0 0 0px 2px #000; 
+}
+
+.payments .right .div-input input{
+    background-color: black;
+    visibility: hidden;
+}
+/* .right .text {
+    display: flex;
+    flex-direction: column;
+} */
+
+.text div:nth-child(3){
+    font-weight:100;
+}
+
+
+.subcribers {
+    margin-top: 45px;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+    padding: 10px;
+}
+.subcribers div {
+    /* display:flex; */
+    /* justify-content: space-between; */
+    /* background-color: royalblue; */
+    /* width: 280px; */
+    background-color: white;
+}
+.subcribers div span {
+    padding-right: 15px;
+}
+
+.subcribers div:first-of-type{
+   font-weight: bold;
+   padding-bottom: 6px;
+   font-size: 1.3em;
+}
+
+.bobbys-text {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+    padding: 10px;
+}
+
+.bobbys-text p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* .bobbys-text div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    background-color: #b5b5b5; 
+    font-size: 0.7em;
+    margin-top: 25px;
+
+} */
+.radio-buttons {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    margin-top: 10px;
+}
+.radio-buttons div input {
+    visibility: show !important;
+}
+.radio-buttons div {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid #fff; */
+    border-radius: 4px;
+    /* box-shadow: 
+     0 0 0px 2px #000;  */
+}
+.radio-buttons div:nth-child(4) input {
+    box-shadow: 
+     0 0 0px 2px #000; 
+    visibility: hidden;
+}
+    
+
+.gift-plans {
+    margin-top: 30px;
+}
+.gift-plans a{
+    /* margin-top: 30px; */
+    color: blue;
+    font-weight: bold;
+}
+
+.gift-plans .first {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 20px;
+}
+.gift-plans .second {
+     display: flex;
+     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* main-content-two styling */
+
+.main-content-two {
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    background-color: white;
+    width: 85vw;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.paypal {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 20px 0;
+    padding: 10px 0%;
+    font: 1em sans-serif;
+}
+.paypal span {
+    margin-right: 5px;
+    /* background-color: red; */
+}
+
+/* google styling */
+.google {
+    font-weight: bold;
+}
+.google a {
+    color:#a0a0a0;
+}
+
+.create {
+  font-size: 1.4em; ;  
+  margin: 10px 0;
+}
+
+.google .input {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+    /* text-align: center; */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+/* .google .input span {
+    background-color: red;
+} */
+
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+
+}
+.password input {
+    text-align: start;
+}
+.ssd input {
+    text-align: start;
+}
+input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+.create-account {
+    margin: 20px;
+}
+.create-account div:nth-child(1) {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.create-account div:nth-child(1) a {
+    color: white;
+}
+
+.bottom-text p:first-of-type {
+   margin-bottom: 20px;
+}
+
+input {
+    visibility: show !important;
+}
+
+
+@media (max-width:500px) {
+    .nav-big {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        font-size: 1.5em;
+        /* margin-bottom: 90px;
+        margin-top: 10px; */
+    }
+    nav p {
+        /* display: flex;
+        justify-content: space-between;
+        width: 170px; */
+        /* border: #b5b5b5 1px solid; */
+        /* justify-content: center; */
+        font-size: 0.7em;
+    }
+    
+    .nav-right {
+        /* position: absolute;
+        top: 194px;
+        padding: 10px 30px;
+        border: 3px solid #b5b5b5;
+        border-radius: 4px; */
+        font-size: 0.8em;
+    }
+
+    .nav-bottom {
+        color: beige;
+        font-size: 0.6em;
+    }
+
+    .payments {
+        /* margin-top: 30px; */
+        /* box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.75); */
+        /* padding: 10px; */
+        font-size:0.8em ;
+    }
+    
+    .payments .left {
+        /* font-weight:bold ;
+        margin-bottom: 10px; 
+        display: flex;
+        justify-content: space-between; */
+        /* background-color: red; */
+        width: 17em;
+    }
+    
+    /* .payments .left .div-input {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 1px;
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-radius: 7.5px;
+        
+    } */
+    
+    /* .payments .left .div-input input{
+        background-color: black;
+    } */
+    
+    .text div:nth-child(3){
+        font-weight:100;
+    }
+    
+    .payments .right {
+        /* font-weight:bold ;
+        margin-bottom: 10px; 
+        display: flex;
+        justify-content: space-between; */
+        /* background-color: red; */
+        width: 17em;
+        /* height: 90px; */
+    }
+    
+    /* .payments .right .div-input {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 1px;
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-radius: 7.5px;
+       
+    }
+     */
+    .payments .right .div-input input{
+        background-color: black;
+    }
+    /* .right .text {
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    .text div:nth-child(3){
+        font-weight:100;
+    }
+    
+    
+    .subcribers {
+        /* margin-top: 45px;
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+        padding: 10px; */
+        font-size: 0.6em;
+    }
+
+    .subcribers div {
+        /* display:flex; */
+        /* justify-content: space-between; */
+        /* background-color: royalblue; */
+        /* width: 280px; */
+        background-color: white;
+    }
+    .subcribers div span {
+        padding-right: 15px;
+    }
+    
+    .subcribers div:first-of-type{
+       font-weight: bold;
+       padding-bottom: 6px;
+       font-size: 1.3em;
+    }
+    
+    .bobbys-text {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    
+    .bobbys-text p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 1em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    
+    /* .bobbys-text div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        background-color: #b5b5b5;
+        font-size: 0.7em;
+        margin-top: 25px;
+    
+    } */
+
+
+    .gift-plans {
+        margin-top: 30px;
+    }
+    .gift-plans a{
+        /* margin-top: 30px; */
+        color: blue;
+        font-weight: bold;
+    }
+    
+    .gift-plans .first {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 20px;
+    }
+    .gift-plans .second {
+         display: flex;
+         flex-direction: column;
+    }
+    
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    
+    /* main-content-two styling */
+    
+    .main-content-two {
+        position: relative;
+        bottom: 70px;
+        z-index: 1;
+        background-color: white;
+        width: 85vw;
+        margin: auto;
+        border: 1px solid white;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+    
+    .paypal {
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        margin: 20px 0;
+        padding: 10px 0%;
+        font: 1em sans-serif;
+    }
+    .paypal span {
+        margin-right: 5px;
+        /* background-color: red; */
+    }
+    
+    /* google styling */
+    .google {
+        font-weight: bold;
+    }
+    .google a {
+        color:#a0a0a0;
+    }
+    
+    .create {
+      font-size: 1.4em; ;  
+      margin: 10px 0;
+    }
+    
+    .google .input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 12px;
+        /* text-align: center; */
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+    /* .google .input span {
+        background-color: red;
+    } */
+    
+    input {
+        border: none;
+        outline: none;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .password input {
+        text-align: start;
+    }
+    .ssd input {
+        text-align: start;
+    }
+    input::placeholder {
+        font-weight: bold;
+        color: black;
+    }
+    
+    .create-account {
+        margin: 20px;
+        font-size: 0.5em;
+        /* background-color: orangered; */
+        text-align: center;
+    
+    }
+    .create-account div:nth-child(1) {
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    }
+    .create-account div:nth-child(1) a {
+        color: white;
+        
+    }
+    
+    /* .bottom-text p:first-of-type {
+       margin-bottom: 20px;
+    } */
+    
+    
+}
+    </style> 
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <h1>THE ATHELTIC</h1>
+            <div class="nav-right">The box</div>
+            <p><span>OFFER</span> <span>OFFER</span>  <span>OFFER</span></p>
+            <div class="nav-big">
+                Get access to quality, ad-free
+               <span>sports coverage</span> 
+            </div>
+            <div class="nav-bottom">
+                Try free for a week cancel anytime during trial
+                before charge
+            </div>
+        </nav>
+
+        <!-- main content markup -->
+        
+          <!-- main-content-one -->
+
+        <div class="main-content-one">
+            <div class="top-payments">
+
+                
+                <div class="content-one-top">
+                    <div class="left">
+                        Choose Plan
+                    </div>
+                    <div class="right">
+                      <span>
+                        USD 
+                        <span> 
+                            <i class="fa-solid fa-sd-card"></i> </i>                        </span> 
+                        <hr>
+                      </span>  
+                        <span>
+                            CAD 
+                            <span> <i class="fa-solid fa-sd-card"></i> </span> 
+                        </span> 
+                    
+                    </div>
+                </div>
+
+                <div class="payments">
+
+                    <div class="left">
+                        <div class="div-input"> 
+                            <input type="radio">
+                        </div>
+                        <div class="text">
+                            <div>
+                                Annual
+                            </div>
+                            <div>  $4.99/mo</div>
+                            <div> After trial ends billed annually</div>    
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="div-input"> 
+                            <input type="radio">  
+                            <!-- <input type="radio">   -->
+                        </div>
+                        <div class="text">
+                            <div>
+                                Monthly
+                            </div>
+                            <div>$4.99/mo</div>
+                            <div>After trial ends billed annually</div> 
+                        </div>  
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="subcribers">
+                <div>Subcribers get:</div>
+                <div> 
+                    <span><i class="fa-solid fa-check"></i></span> 
+                    Smart analysis and exclusive stories.
+                </div>
+                <div> 
+                    <span><i class="fa-solid fa-check"></i></span> 
+                    Unique content from top writers.
+                </div>
+                <div> 
+                    <span><i class="fa-solid fa-check"></i></span> 
+                    In-depth coverage on all teams.
+                </div>
+                <div> 
+                    <span><i class="fa-solid fa-check"></i></span> 
+                    Quality journalism with no ads.
+                </div>
+                <div> 
+                    <span><i class="fa-solid fa-check"></i></span> 
+                    Customizable 5-star mobile apps.
+                </div>
+            </div>
+
+            <div class="bobbys-text">
+                <p>
+                    <span>
+                        Worth it for the interesting angles
+                    </span>   
+                    <span>and unique insight you don't</span>    
+                    <span>really get anywhere else</span>     
+                </p>
+                <div>Bobby Miller Columbus, OH</div>
+                <div class="radio-buttons">
+                    <div><input type="radio"></div>  
+                    <div><input type="radio"></div>  
+                    <div><input type="radio"></div>  
+                    <div><input type="radio"></div>  
+                    <div><input type="radio"></div>  
+                    <div><input type="radio"></div>  
+                    <div><input type="radio"></div>
+                    <!-- <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio"> -->
+                   
+                </div>
+            </div>
+
+            <div class="gift-plans">
+                <div class="first">
+                    <a href="">View Gift Plans</a> 
+                    Get the gift of great sports coverage with 
+                    3-ons
+                    , 5-yr or 2-yr plans
+                </div>
+                <div class="second">
+                    <a href="">View Schedule Plan</a>
+                    college students subcribe with a college 
+                    student gift.
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="main-content-two">
+
+           <h2> 1-Step Checkout </h2>
+           <div class="paypal"> 
+             <span> <i class="fa-brands fa-paypal"></i> </span>     
+             Paypal
+           </div>
+
+           <div class="google">
+               <div class="create">or Create Account</div>
+               <div class="input">
+                   <span> <i class="fa-brands fa-google"></i> </span>
+                   <input type="text" 
+                   placeholder="Continue with Google">
+               </div>
+               <div class="input">
+                   <span> <i class="fa-solid fa-envelope"></i> </span> 
+                   <input type="text" 
+                   placeholder="Sign up with Email">
+               </div>
+               <div class="input">
+                    dsd
+                   <input type="text" placeholder="sdsd">
+               </div>
+               <div class="input ssd">
+                   <input type="text" placeholder="sdsdsdssdsd">
+               </div>
+               <div class="input password">
+                   <input type="text" placeholder="Password">
+               </div>
+               <div class="create-account">
+                  <div> <a href="mail.google.com">Create Account</a> </div>
+                  Already have an account? 
+                  <a href="mail.google.com">Log in</a>
+               </div>
+           </div>
+        
+        
+            <div class="bottom-text">
+                <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Maiores repudiandae reprehenderit neque eum 
+                dolores dolore unde pariatur modi ducimus temporibus
+                , quia libero esse, ea quas ullam aperiam quos porro
+                ? Doloribus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Aliquid provident alias 
+                    veritatis placeat quasi assumenda? Consequuntur 
+                    aliquid omnis, earum eaque praesentium molestiae
+                    . Iure doloremque deleniti nisi rem laboriosam 
+                    placeat et reiciendis, ipsum impedit explicabo 
+                    aut maxime modi tenetur autem eius aliquid 
+                    praesentium quisquam deserunt? Incidunt iste 
+                    fuga doloremque molestias dolores eos tempore 
+                    quas ipsum tempora? <a href="">Click here</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    
+</body>
+</html>

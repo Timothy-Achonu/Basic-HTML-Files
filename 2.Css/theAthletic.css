@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 1.02em; */
+}
+
+  /* nav styles */
+nav {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    padding-bottom: 90px;
+}
+nav h1 {
+    margin-bottom: 30px;
+}
+.nav-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+nav p {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    /* border: #b5b5b5 1px solid; */
+    /* justify-content: center; */
+    font-size: 0.7em;
+}
+
+.nav-right {
+    position: absolute;
+    top: 194px;
+    padding: 10px 30px;
+    border: 3px solid #b5b5b5;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+.nav-bottom {
+    color: beige;
+    font-size: 0.8em;
+}
+
+/* main-content-one styles */
+
+.main-content-one {
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    background-color: white;
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.content-one-top .right {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    color: black;
+    /* border: 1px red; */
+    /* background-color: red; */
+    z-index: 4;
+    width: 115px;
+}
+hr {
+    height: 5px;
+    width: 60px;
+    color: black;
+    background-color: black;
+    margin-top: 2px;
+}
+.content-one-top .left {
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-payments {
+    /* box-shadow: 0px 20px 0px 0px rgba(0,0,0,0.2); */
+    color:black;
+}
+
+.payments {
+    margin-top: 30px;
+    /* box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.75); */
+    padding: 10px;
+}
+
+.payments .left {
+    font-weight:bold ;
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 17em;
+}
+
+.payments .left .div-input {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3.6px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 
+     0 0 0px 2px #000; 
+}
+
+.payments .left .div-input input{
+    background-color: black;
+    visibility: hidden;
+}
+
+.text div:nth-child(3){
+    font-weight:100;
+}
+
+.payments .right {
+    font-weight:bold ;
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 17em;
+    /* height: 90px; */
+}
+
+.payments .right .div-input {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3.6px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 
+     0 0 0px 2px #000; 
+}
+
+.payments .right .div-input input{
+    background-color: black;
+    visibility: hidden;
+}
+/* .right .text {
+    display: flex;
+    flex-direction: column;
+} */
+
+.text div:nth-child(3){
+    font-weight:100;
+}
+
+
+.subcribers {
+    margin-top: 45px;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+    padding: 10px;
+}
+.subcribers div {
+    /* display:flex; */
+    /* justify-content: space-between; */
+    /* background-color: royalblue; */
+    /* width: 280px; */
+    background-color: white;
+}
+.subcribers div span {
+    padding-right: 15px;
+}
+
+.subcribers div:first-of-type{
+   font-weight: bold;
+   padding-bottom: 6px;
+   font-size: 1.3em;
+}
+
+.bobbys-text {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+    padding: 10px;
+}
+
+.bobbys-text p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.bobbys-text div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    /* background-color: #b5b5b5; */
+    font-size: 0.7em;
+    margin-top: 25px;
+
+}
+
+.radio-buttons div input {
+    visibility: hidden;
+}
+
+.gift-plans {
+    margin-top: 30px;
+}
+.gift-plans a{
+    /* margin-top: 30px; */
+    color: blue;
+    font-weight: bold;
+}
+
+.gift-plans .first {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 20px;
+}
+.gift-plans .second {
+     display: flex;
+     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* main-content-two styling */
+
+.main-content-two {
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    background-color: white;
+    width: 85vw;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.paypal {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 20px 0;
+    padding: 10px 0%;
+    font: 1em sans-serif;
+}
+.paypal span {
+    margin-right: 5px;
+    background-color: red;
+}
+
+/* google styling */
+.google {
+    font-weight: bold;
+}
+.google a {
+    color:#a0a0a0;
+}
+
+.create {
+  font-size: 1.4em; ;  
+  margin: 10px 0;
+}
+
+.google .input {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+    /* text-align: center; */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.google .input span {
+    background-color: red;
+}
+
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+
+}
+.password input {
+    text-align: start;
+}
+.ssd input {
+    text-align: start;
+}
+input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+.create-account {
+    margin: 20px;
+}
+.create-account div:nth-child(1) {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.create-account div:nth-child(1) a {
+    color: white;
+}
+
+.bottom-text p:first-of-type {
+   margin-bottom: 20px;
+}
+
+
+@media (max-width:500px) {
+    .nav-big {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        font-size: 1.5em;
+        /* margin-bottom: 90px;
+        margin-top: 10px; */
+    }
+    nav p {
+        /* display: flex;
+        justify-content: space-between;
+        width: 170px; */
+        /* border: #b5b5b5 1px solid; */
+        /* justify-content: center; */
+        font-size: 0.7em;
+    }
+    
+    .nav-right {
+        /* position: absolute;
+        top: 194px;
+        padding: 10px 30px;
+        border: 3px solid #b5b5b5;
+        border-radius: 4px; */
+        font-size: 0.8em;
+    }
+
+    .nav-bottom {
+        color: beige;
+        font-size: 0.6em;
+    }
+
+    .payments {
+        /* margin-top: 30px; */
+        /* box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.75); */
+        /* padding: 10px; */
+        font-size:0.8em ;
+    }
+    
+    .payments .left {
+        /* font-weight:bold ;
+        margin-bottom: 10px; 
+        display: flex;
+        justify-content: space-between; */
+        /* background-color: red; */
+        width: 17em;
+    }
+    
+    /* .payments .left .div-input {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 1px;
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-radius: 7.5px;
+        
+    } */
+    
+    /* .payments .left .div-input input{
+        background-color: black;
+    } */
+    
+    .text div:nth-child(3){
+        font-weight:100;
+    }
+    
+    .payments .right {
+        /* font-weight:bold ;
+        margin-bottom: 10px; 
+        display: flex;
+        justify-content: space-between; */
+        /* background-color: red; */
+        width: 17em;
+        /* height: 90px; */
+    }
+    
+    /* .payments .right .div-input {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 1px;
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-radius: 7.5px;
+       
+    }
+     */
+    .payments .right .div-input input{
+        background-color: black;
+    }
+    /* .right .text {
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    .text div:nth-child(3){
+        font-weight:100;
+    }
+    
+    
+    .subcribers {
+        /* margin-top: 45px;
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+        padding: 10px; */
+        font-size: 0.6em;
+    }
+
+    .subcribers div {
+        /* display:flex; */
+        /* justify-content: space-between; */
+        /* background-color: royalblue; */
+        /* width: 280px; */
+        background-color: white;
+    }
+    .subcribers div span {
+        padding-right: 15px;
+    }
+    
+    .subcribers div:first-of-type{
+       font-weight: bold;
+       padding-bottom: 6px;
+       font-size: 1.3em;
+    }
+    
+    .bobbys-text {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    
+    .bobbys-text p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 1em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    
+    .bobbys-text div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        /* background-color: #b5b5b5; */
+        font-size: 0.7em;
+        margin-top: 25px;
+    
+    }
+
+    
+    .gift-plans {
+        margin-top: 30px;
+    }
+    .gift-plans a{
+        /* margin-top: 30px; */
+        color: blue;
+        font-weight: bold;
+    }
+    
+    .gift-plans .first {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 20px;
+    }
+    .gift-plans .second {
+         display: flex;
+         flex-direction: column;
+    }
+    
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    
+    /* main-content-two styling */
+    
+    .main-content-two {
+        position: relative;
+        bottom: 70px;
+        z-index: 1;
+        background-color: white;
+        width: 85vw;
+        margin: auto;
+        border: 1px solid white;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+    
+    .paypal {
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        margin: 20px 0;
+        padding: 10px 0%;
+        font: 1em sans-serif;
+    }
+    .paypal span {
+        margin-right: 5px;
+        background-color: red;
+    }
+    
+    /* google styling */
+    .google {
+        font-weight: bold;
+    }
+    .google a {
+        color:#a0a0a0;
+    }
+    
+    .create {
+      font-size: 1.4em; ;  
+      margin: 10px 0;
+    }
+    
+    .google .input {
+        display: flex;
+        width: 100%;
+        margin-bottom: 12px;
+        /* text-align: center; */
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+    .google .input span {
+        background-color: red;
+    }
+    
+    input {
+        border: none;
+        outline: none;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .password input {
+        text-align: start;
+    }
+    .ssd input {
+        text-align: start;
+    }
+    input::placeholder {
+        font-weight: bold;
+        color: black;
+    }
+    
+    .create-account {
+        margin: 20px;
+        font-size: 0.5em;
+        /* background-color: orangered; */
+        text-align: center;
+    
+    }
+    .create-account div:nth-child(1) {
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    }
+    .create-account div:nth-child(1) a {
+        color: white;
+        
+    }
+    
+    /* .bottom-text p:first-of-type {
+       margin-bottom: 20px;
+    } */
+    
+    
+}
